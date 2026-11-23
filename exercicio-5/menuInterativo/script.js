@@ -32,6 +32,9 @@ do {
     case 5:
         alert("Saindo em segurança...")
         break;
+    default:
+        alert("Opção Inválida, Tente Novamente.")
+        break;
   }
 
 } while(menu !== 5);
