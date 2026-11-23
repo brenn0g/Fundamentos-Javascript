@@ -23,14 +23,17 @@ do {
       addValue = parseFloat(prompt("Qual o valor a ser adicionado?"));
       value += addValue;
       break;
-
     case 2:
       subValue = parseFloat(prompt("Qual valor a ser retirado?"));
       value -= subValue;
       break;
-
     case 3:
       alert("Saindo Em Segurança...");
       alert("Volte Sempre!");
+      break;
+    default:
+      alert("Opção Inválida, Tente Novamente.")
+      break;
+    
   }
 } while (option !== 3);
