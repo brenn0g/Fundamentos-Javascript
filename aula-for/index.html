@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página da aula sobre os conceitos principais sobre FOR">
+    <title>Aula - FOR</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <p id="logo-p">JS<span id="logo-min">JavaScript</span></p>
+        </div>
+    </header>
+
+    <main class="hero">
+        <div class="hero-title">
+            <h1>Estruturas de Repetição - FOR</h1>
+        </div>
+
+        <div>
+            <h2>Conteúdo</h2>
+
+            <p>
+                A estrutura de repetição <strong>FOR</strong> é utilizada para
+                executar um bloco de código várias vezes, geralmente quando
+                sabemos previamente quantas repetições serão necessárias.
+            </p>
+
+            <p>
+                Ela possui três partes principais: inicialização, condição
+                e incremento ou decremento.
+            </p>
+
+            <br>
+
+            <p>
+                "PARA cada repetição, verifique a condição e execute o código
+                enquanto ela for verdadeira."
+            </p>
+        </div>
+
+        <div>
+            <h2>Sintaxe:</h2>
+
+            <pre class="code-preview">
+for (inicializacao; condicao; incremento) {
+    // código que será repetido
+}
+            </pre>
+        </div>
+
+        <div>
+            <h2>Exemplo:</h2>
+
+            <pre class="code-preview">
+for (let contador = 1; contador <= 5; contador++) {
+    console.log(contador)
+}
+            </pre>
+
+            <p>
+                Neste exemplo, os números de 1 a 5 serão exibidos no console.
+                A cada repetição, a variável contador é incrementada em 1,
+                até que a condição se torne falsa.
+            </p>
+        </div>
+
+        <div>
+            <h2>Fluxo de Execução</h2>
+
+            <p>
+                O funcionamento do FOR segue os seguintes passos:
+            </p>
+
+            <ul>
+                <li>Inicializa a variável de controle.</li>
+                <li>Verifica se a condição é verdadeira.</li>
+                <li>Se for verdadeira, executa o bloco de código.</li>
+                <li>Executa o incremento ou decremento.</li>
+                <li>Retorna para verificar a condição novamente.</li>
+                <li>Encerra o loop quando a condição for falsa.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Cuidado com Loops Infinitos</h2>
+
+            <p>
+                Um erro comum ao utilizar o FOR é criar uma condição que
+                nunca se torna falsa ou esquecer de atualizar corretamente
+                a variável de controle.
+            </p>
+
+            <p>
+                Isso faz com que o bloco de código seja executado
+                indefinidamente, criando um loop infinito.
+            </p>
+
+            <pre class="code-preview">
+for (let contador = 1; contador <= 5; contador--) {
+    console.log(contador)
+}
+            </pre>
+
+            <p>
+                Neste exemplo, a variável <strong>contador</strong> começa
+                em 1 e é decrementada a cada repetição. Como ela nunca
+                alcançará um valor maior que 5, a condição continuará
+                verdadeira e o loop não terminará.
+            </p>
+        </div>
+
+        <div>
+            <h2>Exemplo Prático</h2>
+
+            <pre class="code-preview">
+let numero = Number(prompt("Digite um número:"))
+
+for (let contador = 1; contador <= 10; contador++) {
+    console.log(`${numero} x ${contador} = ${numero * contador}`)
+}
+            </pre>
+
+            <p>
+                O programa solicitará um número ao usuário e utilizará
+                o FOR para exibir sua tabuada de 1 a 10 no console.
+            </p>
+        </div>
+
+        <div class="hero-links">
+            <h2>Navegação:</h2>
+            <ul>
+                <li><a href="../index.html">Voltar</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p class="footer-p">&copy; BG - 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
